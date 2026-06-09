@@ -6,10 +6,6 @@ https://loan-default-prediction-nj6852wyvya53dzzeztef8.streamlit.app/
 ##
 ## 🌐 Live Demo
 
-### Streamlit App
-
-https://your-streamlit-link.streamlit.app/
-
 ### FastAPI API
 
 https://your-railway-link.up.railway.app/docs
