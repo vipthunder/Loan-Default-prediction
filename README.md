@@ -131,13 +131,13 @@ https://www.linkedin.com/in/vipul-singh-243700282/
 ![Railway](https://img.shields.io/badge/API-Railway-black?logo=railway)
 ![ROC-AUC](https://img.shields.io/badge/ROC--AUC-0.942-brightgreen)
 
-[**Live Demo →**](https://your-streamlit-app.streamlit.app) &nbsp;|&nbsp; [**API Docs →**](https://loan-default-prediction-production.up.railway.app/docs) &nbsp;|&nbsp; [**Notebook →**](notebooks/loan_default_prediction.ipynb)
+[**Live Demo →**](https://loan-default-prediction-fyiihfwhxuv62f2lu8k2gu.streamlit.app/) &nbsp;|&nbsp; [**API Docs →**](https://loan-default-prediction-production.up.railway.app/docs) &nbsp;|&nbsp; [**Notebook →**](notebooks/loan_default_prediction.ipynb)
 
 </div>
 
 ---
 
-## 📌 Overview
+## Overview
 
 Financial institutions lose billions annually to loan defaults. This project builds an **end-to-end credit risk scoring system** that estimates the probability a borrower will default, using gradient boosted trees trained on 32,000+ real loan records.
 
@@ -147,19 +147,19 @@ The system goes beyond a Jupyter notebook — it ships a **FastAPI backend** dep
 
 ---
 
-## 🎯 Results
+##  Results
 
 | Model | Precision | Recall | F1 Score | ROC-AUC |
 |---|---|---|---|---|
 | Logistic Regression | 0.73 | 0.56 | 0.64 | 0.867 |
 | Random Forest | 0.91 | 0.72 | 0.82 | 0.933 |
-| **XGBoost** ✅ | **0.93** | **0.72** | **0.83** | **0.942** |
+| **XGBoost**  | **0.93** | **0.72** | **0.83** | **0.942** |
 
 > XGBoost selected as final model. Optimised for **recall** — in credit risk, a missed default (false negative) is costlier than a false alarm.
 
 ---
 
-## 🏗️ System Architecture
+## System Architecture
 
 ```
 ┌─────────────────────────────────────────────────────────┐
@@ -179,7 +179,7 @@ The system goes beyond a Jupyter notebook — it ships a **FastAPI backend** dep
 
 ---
 
-## 🔬 ML Pipeline
+##  ML Pipeline
 
 ### 1. Data Cleaning
 - Removed logical impossibilities: rows where `person_emp_length > person_age`
@@ -202,11 +202,11 @@ The system goes beyond a Jupyter notebook — it ships a **FastAPI backend** dep
 - Preprocessing saved as `preprocessor.pkl` via `ColumnTransformer` for consistent inference
 
 ### 5. Key EDA Findings
-- 🔴 **Loan grade** is the strongest default predictor — Grade G default rate ~4× Grade A
-- 🔴 **Loan-to-income ratio** separates defaulters cleanly (defaulters avg 0.38 vs 0.16)
-- 🟡 **RENT** ownership defaults more than MORTGAGE or OWN
-- 🟡 **Debt consolidation** and **medical** loan intents have highest default rates
-- 🟢 Missing `emp_length` → higher default rate (informative missingness)
+-  **Loan grade** is the strongest default predictor — Grade G default rate ~4× Grade A
+-  **Loan-to-income ratio** separates defaulters cleanly (defaulters avg 0.38 vs 0.16)
+-  **RENT** ownership defaults more than MORTGAGE or OWN
+-  **Debt consolidation** and **medical** loan intents have highest default rates
+-   Missing `emp_length` → higher default rate (informative missingness)
 
 ### 6. SHAP Explainability
 Top features by SHAP importance:
@@ -218,7 +218,7 @@ Top features by SHAP importance:
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 loan-default-prediction/
@@ -234,43 +234,23 @@ loan-default-prediction/
 
 ---
 
-## 🚀 Running Locally
+## Project Features
 
-### Prerequisites
-- Python 3.10+
-- Git
+-Loan Default Prediction
+- XGBoost Machine Learning Model
+- Feature Engineering Pipeline
+- SHAP Explainable AI
+- FastAPI Backend
+- Streamlit Frontend
+- Probability-Based Risk Assessment
+- Real-Time Predictions
+- Railway Deployment
+- Production-Ready Inference Pipeline
 
-### Setup
-
-```bash
-# Clone
-git clone https://github.com/<your-username>/loan-default-prediction.git
-cd loan-default-prediction
-
-# Install dependencies
-pip install -r requirements.txt
-```
-
-### Start the API
-
-```bash
-uvicorn Fast_api_app:app --reload
-# → http://localhost:8000
-# → Swagger docs at http://localhost:8000/docs
-```
-
-### Start the Frontend
-
-```bash
-# In a new terminal
-streamlit run streamlit_app.py
-```
-
-> **Note:** Change `API_URL` in `streamlit_app.py` from the Railway URL to `http://localhost:8000/predict` for local testing.
 
 ---
 
-## 🌐 API Reference
+##  API Reference
 
 **`POST /predict`** — Returns default probability for a loan applicant
 
@@ -304,7 +284,7 @@ streamlit run streamlit_app.py
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 | Layer | Tool | Purpose |
 |---|---|---|
@@ -319,23 +299,9 @@ streamlit run streamlit_app.py
 
 ---
 
-## 📦 Requirements
 
-```
-streamlit
-fastapi
-uvicorn
-pandas>=2.0
-numpy>=1.26
-scikit-learn>=1.4
-xgboost>=2.0
-shap
-joblib
-```
 
----
-
-## 🔮 Roadmap
+##  Roadmap
 
 - [ ] SHAP waterfall plots surfaced in Streamlit UI (per-prediction explanations)
 - [ ] LightGBM model with A/B comparison
@@ -345,9 +311,8 @@ joblib
 
 ---
 
-## 👤 Author
+##  Author
 
 **Vipul Singh**  
-Integrated M.Sc. Mathematics · NIT Warangal  
-[LinkedIn](https://www.linkedin.com/in/vipul-singh-243700282/) · [GitHub](https://github.com/<your-username>)
+[LinkedIn](https://www.linkedin.com/in/vipul-singh-243700282/) 
 
