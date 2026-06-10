@@ -30,7 +30,7 @@ def home():
 @app.post("/predict")
 def predict(data: LoanApplication):
 
-    df = pd.DataFrame([data.dict()])
+    df = pd.DataFrame([data.model_dump()])
 
     X = preprocessor.transform(df)
 
