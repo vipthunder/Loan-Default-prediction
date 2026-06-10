@@ -154,8 +154,8 @@ if st.button("Predict Risk", use_container_width=True):
                     risk
                 )
 
-            st.write("### Risk Score")
-            st.progress(min(max(probability, 0.0), 1.0))
+            # st.write("### Risk Score")
+            # st.progress(min(max(probability, 0.0), 1.0))
 
             if risk == "Low Risk":
                 st.success(
