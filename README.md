@@ -155,7 +155,7 @@ The system goes beyond a Jupyter notebook — it ships a **FastAPI backend** dep
 | Random Forest | 0.91 | 0.72 | 0.82 | 0.933 |
 | **XGBoost**  | **0.93** | **0.72** | **0.83** | **0.942** |
 
-> XGBoost selected as final model. Optimised for **recall** — in credit risk, a missed default (false negative) is costlier than a false alarm.
+ XGBoost selected as final model. Optimised for **recall** — in credit risk, a missed default (false negative) is costlier than a false alarm.
 
 ---
 
@@ -236,7 +236,6 @@ loan-default-prediction/
 
 ## Project Features
 
--Loan Default Prediction
 - XGBoost Machine Learning Model
 - Feature Engineering Pipeline
 - SHAP Explainable AI
