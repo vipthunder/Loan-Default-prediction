@@ -6,12 +6,7 @@
 
 ### End-to-end ML system to predict credit default probability — from raw data to a deployed REST API
 
-![Python](https://img.shields.io/badge/Python-3.10+-blue?logo=python&logoColor=white)
-![XGBoost](https://img.shields.io/badge/XGBoost-3.2-orange?logo=xgboost)
-![FastAPI](https://img.shields.io/badge/FastAPI-0.100+-green?logo=fastapi)
-![Streamlit](https://img.shields.io/badge/Streamlit-Cloud-red?logo=streamlit)
-![Railway](https://img.shields.io/badge/API-Railway-black?logo=railway)
-![ROC-AUC](https://img.shields.io/badge/ROC--AUC-0.942-brightgreen)
+
 
 [**Live Demo →**](https://loan-default-prediction-fyiihfwhxuv62f2lu8k2gu.streamlit.app/) &nbsp;|&nbsp; [**API Docs →**](https://loan-default-prediction-production.up.railway.app/docs) &nbsp;|&nbsp; [**Notebook →**](notebooks/loan_default_prediction.ipynb)
 
