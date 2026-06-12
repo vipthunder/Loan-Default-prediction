@@ -2,7 +2,7 @@
 ## 
 <div align="center">
 
-# 🏦 Loan Default Risk Prediction
+# 🏦 CreditRiskAI
 
 ### End-to-end ML system to predict credit default probability — from raw data to a deployed REST API
 
